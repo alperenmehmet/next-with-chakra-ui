@@ -11,6 +11,8 @@ import {
   Checkbox,
   Button,
   Image,
+  Flex,
+  Center,
 } from '@chakra-ui/react';
 
 const Cart = () => {
@@ -31,17 +33,25 @@ const Cart = () => {
           <span style={{ fontWeight: 'bold' }}> try changing the theme.</span>
         </Text>
       </VStack>
-      <SimpleGrid columns={3} columnGap={3} rowGap={6} w='full'>
-        <GridItem>
-          <Image
-            src='https://cdn.shopify.com/s/files/1/0066/6065/3123/products/PNY20_Graphic_22_Postcard_Highlands_Comp_6752ec2e-78c5-47d2-a9a3-d87426097f63_360x.jpg?v=1617169920'
-            alt='image'
-            w='96px'
-            h='96px'
-          />
-          <Text>Penny Board</Text>
-        </GridItem>
-      </SimpleGrid>
+      <Flex>
+        <Image
+          src='https://cdn.shopify.com/s/files/1/0066/6065/3123/products/PNY20_Graphic_22_Postcard_Highlands_Comp_6752ec2e-78c5-47d2-a9a3-d87426097f63_360x.jpg?v=1617169920'
+          alt='image'
+          w='96px'
+          h='96px'
+        />
+        <Center>
+          <Text w='240px' mx={2} textAlign='center'>
+            Penny Board <br />
+            <span style={{ fontWeight: 'bold' }}>POSTCARD HIGHLAND 22"</span>
+          </Text>
+          <Text fontWeight='bold'>€89,99</Text>
+        </Center>
+      </Flex>
+      <Flex>
+        <Text mx={2}>Subtotal</Text>
+        <Text>€89,99</Text>
+      </Flex>
     </VStack>
   );
 };
