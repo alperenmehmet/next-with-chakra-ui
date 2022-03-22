@@ -3,8 +3,6 @@ import {
   VStack,
   Text,
   Image,
-  Flex,
-  Center,
   HStack,
   AspectRatio,
   Stack,
